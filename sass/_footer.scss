@@ -3,4 +3,63 @@
 
     grid-row: 6 / 7;
     grid-column: full-start / full-end;
+
+    padding: 8rem;
+
+    &__copyright {
+        font-size: 1.5rem;
+        padding-top: 4rem;
+        text-align: center;
+
+        &--link {
+            padding: 0.5rem 3rem;
+            display: block;
+            transition: all 0.8s;
+        }
+
+        &--link:link,
+        &--link:visited,
+        &--link:active {
+            color: rgba(white, 0.5);
+            text-decoration: none;
+        }
+
+        &--link:hover {
+            background-color: rgba(white, 0.05);
+
+            transform: translateY(-7px);
+        }
+    }
+}
+
+.nav {
+    list-style: none;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-template-rows: 1fr;
+    grid-gap: 2rem;
+
+    align-items: center;
+
+    &__link:link,
+    &__link:visited {
+        font-size: 1.5rem;
+        color: white;
+        text-decoration: none;
+        font-family: $font-display;
+        text-transform: uppercase;
+        text-align: center;
+        display: block;
+
+        padding: 0.5rem 1.5rem;
+
+        transition: all 0.2s;
+    }
+
+    &__link:hover,
+    &__link:active {
+        background-color: rgba(white, 0.05);
+        transform: translateY(-3px);
+    }
 }
