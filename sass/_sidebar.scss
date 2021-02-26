@@ -4,3 +4,34 @@
     grid-row: 1 / -1;
     grid-column: sidebar-start / sidebar-end;
 }
+
+.ayo__logo {
+    display: flex;
+
+    justify-self: center;
+    padding: 1rem;
+    // mix-blend-mode: darken;
+    box-shadow: inset 0 0 0 100rem rgba(0, 0, 0, 0.2); //
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+    border-radius: 100rem;
+
+    &--1 {
+        border-radius: 500%;
+        width: 90%;
+        // display: block;
+        margin-left: 3px;
+        margin-top: 1rem;
+
+        transition: all 0.7s;
+        // padding-top: 3rem;
+        margin-top: 3rem;
+    }
+
+    &--1:hover {
+        transform: translateY(-2px);
+        border-radius: 100rem;
+        margin-top: 2.1rem;
+
+        // mix-blend-mode: darken;
+    }
+}

@@ -4,9 +4,14 @@
 }
 
 .heading-1 {
+    @include base-style;
+    font-size: 5.3rem;
+    color: $color-grey-light-1;
+    line-height: 1;
 }
 
 .heading-2 {
+    @include base-style;
     font-size: 4rem;
     font-style: italic;
     line-height: 1;
@@ -21,6 +26,7 @@
 }
 
 .heading-3 {
+    @include base-style;
     font-size: 1.6rem;
     color: $color-primary;
     text-transform: uppercase;

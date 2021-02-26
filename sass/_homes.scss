@@ -18,6 +18,10 @@
 
     grid-row-gap: 3.5rem;
 
+    box-shadow: 0 2rem 4rem rgba(black, 0.2);
+
+    transition: all 1s;
+
     &__img {
         width: 100%;
         grid-column: 1 / -1;
@@ -90,4 +94,8 @@
     &__btn {
         grid-column: 1 / 3;
     }
+}
+
+.home:hover {
+    transform: translateY(-10px);
 }
