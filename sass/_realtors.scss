@@ -4,4 +4,58 @@
     grid-row: 1/ 2;
 
     grid-column: col-start 6 / full-end;
+
+    display: grid;
+    align-content: center;
+    justify-content: center;
+
+    grid-row-gap: 2rem;
+    justify-items: center;
+}
+
+.realtors {
+    &__list {
+        display: grid;
+        grid-template-columns: min-content max-content;
+        grid-column-gap: 2rem;
+        grid-row-gap: 5vh;
+        align-items: center;
+    }
+
+    &__img {
+        width: 6rem;
+        border-radius: 50%;
+        display: block;
+        box-shadow: 0 -4rem 15rem rgba(white, 1);
+    }
+
+    &__sold {
+        text-transform: uppercase;
+        color: $color-grey-light-2;
+        margin-top: -3px;
+        font-size: 1.2rem;
+    }
+
+    &__ayo:link {
+        animation: bounce 2s infinite;
+    }
+
+    &__ayo:visited,
+    &__ayo:active,
+    &__ayo:hover {
+        animation: bounce 2s infinite;
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
