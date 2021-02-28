@@ -39,6 +39,12 @@ body {
     grid-template-rows: 8rem calc(100vh - 8rem);
   }
 }
+@media (max-width: 50rem) {
+  .container {
+    grid-template-columns: [full-start] auto [center-start] repeat(8, [col-start] min-content [col-end]) [center-end] auto [full-end];
+  }
+}
+
 .heading-1 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
@@ -144,6 +150,7 @@ body {
   margin-left: 3px;
   transition: all 0.7s;
   margin-top: 3rem;
+  width: 5rem;
 }
 @media (max-width: 75rem) {
   .ayo__logo--1 {
@@ -342,20 +349,37 @@ body {
     height: 70vh;
   }
 }
+@media (max-width: 50rem) {
+  .story__pictures {
+    height: 45vh;
+  }
+}
 .story__img--1 {
   width: 100%;
   grid-column: 2/6;
-  grid-row: 4/7;
+  grid-row: 2/5;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1);
   transition: all 1s;
 }
+@media (max-width: 50rem) {
+  .story__img--1 {
+    grid-column: 2/6;
+    grid-row: 3/6;
+  }
+}
 .story__img--2 {
   width: 115%;
-  grid-column: 5/8;
-  grid-row: 6/9;
+  grid-column: 4/8;
+  grid-row: 4/9;
   z-index: 10;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.4);
   transition: all 1s;
+}
+@media (max-width: 50rem) {
+  .story__img--2 {
+    grid-column: 5/8;
+    grid-row: 6/10;
+  }
 }
 .story__img--1:hover, .story__img--2:hover {
   transform: translateY(-10px);
