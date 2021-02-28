@@ -28,6 +28,13 @@ body {
   grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
   grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
 }
+@media (max-width: 75rem) {
+  .container {
+    grid-template-rows: 8rem 80vh min-content 40vw repeat(3, min-content);
+    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  }
+}
+
 .heading-1 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
@@ -106,6 +113,12 @@ body {
   background-color: #c69963;
   grid-row: 1/-1;
   grid-column: sidebar-start/sidebar-end;
+}
+@media (max-width: 75rem) {
+  .sidebar {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+  }
 }
 
 .ayo__logo {
