@@ -18,6 +18,8 @@ $font-display: "Josefin Sans", sans-serif;
 $bp-largest: 75rem; // 1200px
 $bp-big: 62rem; //982px
 $bp-large: 52rem; // 823px
+$bp-small: 50rem; // 774px
+$bp-smallest: 31.25rem;
 
 *,
 *::before,
@@ -73,5 +75,8 @@ body {
 
     @media (max-width: $bp-big) {
         grid-template-rows: 8rem calc(100vh - 8rem);
+    }
+
+    @media (max-width: $bp-small) {
     }
 }

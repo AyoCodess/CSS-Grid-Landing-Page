@@ -20,15 +20,14 @@
     border-radius: 100rem;
 
     @media (max-width: $bp-largest) {
-        border-radius: inti;
+        border-radius: initial;
         padding: initial;
         box-shadow: initial;
-        margin: 0rem;
     }
 
     &--1 {
         border-radius: 500%;
-        width: 90%;
+
         // display: block;
         margin-left: 3px;
 
@@ -38,7 +37,7 @@
 
         @media (max-width: $bp-largest) {
             border-radius: 500%;
-            width: 5%;
+            width: 5.5rem;
             margin-left: 1.5rem;
             margin-top: 1.5rem;
             transition: 1s;
