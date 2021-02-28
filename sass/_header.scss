@@ -19,6 +19,7 @@
     display: grid;
 
     grid-template-rows: 1fr min-content minmax(min-content, 6rem) 1fr;
+
     grid-row-gap: 1.5rem;
     justify-content: center;
 
@@ -45,6 +46,7 @@
         grid-template-columns: 1fr max-content 1fr;
         align-items: center;
         grid-column-gap: 2rem;
+        filter: brightness(50%);
 
         &::before,
         &::after {
@@ -60,9 +62,12 @@
         grid-template-columns: repeat(4, 1fr);
         grid-column-gap: 3rem;
         justify-items: center;
+        align-items: center;
 
         img {
-            height: 2.5rem;
+            max-height: 2.5rem;
+            max-width: 100%;
+
             filter: brightness(50%);
         }
     }

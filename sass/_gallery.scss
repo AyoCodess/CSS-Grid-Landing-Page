@@ -1,5 +1,5 @@
 .gallery {
-    background-color: $color-grey-light-1;
+    background-color: $color-secondary;
 
     grid-row: 5 / 6;
     grid-column: full-start / full-end;
@@ -11,6 +11,7 @@
     padding: 1.5rem;
 
     &__item {
+        box-shadow: 0 -4rem 15rem rgba($color-secondary, 0.3);
         &--1 {
             grid-row: 5 / 8;
             grid-column: 5 / 8;

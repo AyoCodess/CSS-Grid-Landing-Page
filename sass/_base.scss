@@ -14,6 +14,9 @@ $color-grey-dark-2: #6d5d4b;
 $font-primary: "Nunito", sans-serif;
 $font-display: "Josefin Sans", sans-serif;
 
+/// RESPONSIVE BREAKPOINTS ///@at-root
+$bp-largest: 75rem;
+
 *,
 *::before,
 *::after {
@@ -25,6 +28,10 @@ $font-display: "Josefin Sans", sans-serif;
 html {
     box-sizing: border-box;
     font-size: 62.5%; //1 rem = 10px
+
+    @media (max-width: $bp-largest) {
+        font-size: 60%;
+    }
 }
 
 body {
