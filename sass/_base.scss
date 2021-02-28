@@ -16,7 +16,7 @@ $font-display: "Josefin Sans", sans-serif;
 
 /// RESPONSIVE BREAKPOINTS ///@at-root
 $bp-largest: 75rem; // 1200px
-$bp-big: 62rem;
+$bp-big: 62rem; //982px
 $bp-large: 52rem; // 823px
 
 *,
@@ -72,9 +72,6 @@ body {
     }
 
     @media (max-width: $bp-big) {
-        grid-template-rows: 8rem calc(100vh - 6rem) min-content 40vw repeat(
-                3,
-                min-content
-            );
+        grid-template-rows: 8rem calc(100vh - 8rem);
     }
 }
