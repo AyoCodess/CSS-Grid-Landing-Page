@@ -26,8 +26,8 @@
 
     @media (max-width: $bp-big) {
         border-radius: initial;
-        padding-bottom: 2rem;
-        margin-top: 1rem;
+        padding: initial;
+        box-shadow: initial;
     }
 
     &--1 {

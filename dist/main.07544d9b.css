@@ -142,8 +142,8 @@ body {
 @media (max-width: 62rem) {
   .ayo__logo {
     border-radius: initial;
-    padding-bottom: 2rem;
-    margin-top: 1rem;
+    padding: initial;
+    box-shadow: initial;
   }
 }
 .ayo__logo--1 {
