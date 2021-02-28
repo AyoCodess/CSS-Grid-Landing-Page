@@ -1,7 +1,6 @@
 .header {
     background-color: $color-grey-dark-1;
 
-    grid-row: 1 / 2;
     grid-column: full-start / col-start 6;
 
     background-image: linear-gradient(
@@ -22,6 +21,10 @@
 
     grid-row-gap: 1.5rem;
     justify-content: center;
+
+    @media (max-width: $bp-big) {
+        grid-column: 1 /-1;
+    }
 
     &-main {
         font-size: 1.7rem;

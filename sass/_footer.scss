@@ -1,7 +1,6 @@
 .footer {
     background-color: $color-secondary;
 
-    grid-row: 6 / 7;
     grid-column: full-start / full-end;
 
     padding: 8rem;
@@ -41,6 +40,14 @@
     grid-gap: 2rem;
 
     align-items: center;
+
+    @media (max-width: $bp-largest) {
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    }
+
+    @media (max-width: $bp-large) {
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    }
 
     &__link:link,
     &__link:visited {

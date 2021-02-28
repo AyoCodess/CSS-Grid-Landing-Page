@@ -34,6 +34,11 @@ body {
     grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
   }
 }
+@media (max-width: 62rem) {
+  .container {
+    grid-template-rows: 8rem calc(100vh - 6rem) min-content 40vw repeat(3, min-content);
+  }
+}
 
 .heading-1 {
   font-family: "Josefin Sans", sans-serif;
@@ -111,13 +116,12 @@ body {
 
 .sidebar {
   background-color: #c69963;
-  grid-row: 1/-1;
   grid-column: sidebar-start/sidebar-end;
 }
 @media (max-width: 75rem) {
   .sidebar {
-    grid-column: 1/-1;
     grid-row: 1/2;
+    grid-column: 1/-1;
   }
 }
 
@@ -125,9 +129,14 @@ body {
   display: flex;
   justify-self: center;
   padding: 1rem;
-  box-shadow: inset 0 0 0 100rem rgba(0, 0, 0, 0.2);
   box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
   border-radius: 100rem;
+}
+@media (max-width: 75rem) {
+  .ayo__logo {
+    border-radius: 25%;
+    padding: 1rem;
+  }
 }
 .ayo__logo--1 {
   border-radius: 500%;
@@ -137,15 +146,31 @@ body {
   transition: all 0.7s;
   margin-top: 3rem;
 }
+@media (max-width: 75rem) {
+  .ayo__logo--1 {
+    border-radius: 500%;
+    width: 5%;
+    margin-left: 3px;
+    margin-top: 0.5rem;
+    transition: all 0.5s;
+  }
+}
 .ayo__logo--1:hover {
   transform: translateY(-2px);
   border-radius: 100rem;
   margin-top: 2.1rem;
 }
+@media (max-width: 75rem) {
+  .ayo__logo--1:hover {
+    transform: translateY(px);
+    transform: translateX(0px);
+    border-radius: 100rem;
+    margin-top: 0rem;
+  }
+}
 
 .header {
   background-color: #54483a;
-  grid-row: 1/2;
   grid-column: full-start/col-start 6;
   background-image: linear-gradient(rgba(16, 29, 44, 0.93), rgba(16, 29, 44, 0.93)), url(/hero.ac0612d9.jpeg);
   background-size: cover;
@@ -156,6 +181,11 @@ body {
   grid-template-rows: 1fr min-content minmax(min-content, 6rem) 1fr;
   grid-row-gap: 1.5rem;
   justify-content: center;
+}
+@media (max-width: 62rem) {
+  .header {
+    grid-column: 1/-1;
+  }
 }
 .header-main {
   font-size: 1.7rem;
@@ -199,7 +229,6 @@ body {
 
 .realtors {
   background-color: #101d2c;
-  grid-row: 1/2;
   grid-column: col-start 6/full-end;
   display: grid;
   align-content: center;
@@ -207,13 +236,31 @@ body {
   grid-row-gap: 2rem;
   justify-items: center;
 }
+@media (max-width: 62rem) {
+  .realtors {
+    grid-column: 1/-1;
+  }
+}
 
+@media (max-width: 62rem) {
+  .realtors {
+    padding-top: 5rem;
+  }
+}
 .realtors__list {
   display: grid;
   grid-template-columns: min-content max-content;
   grid-column-gap: 2rem;
   grid-row-gap: 5vh;
   align-items: center;
+}
+@media (max-width: 62rem) {
+  .realtors__list {
+    grid-template-columns: repeat(3, min-content max-content);
+    grid-column-gap: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+  }
 }
 .realtors__img {
   width: 6rem;
@@ -246,7 +293,6 @@ body {
   }
 }
 .features {
-  grid-row: 2/3;
   grid-column: center-start/center-end;
   margin: 15rem 0;
   display: grid;
@@ -280,7 +326,6 @@ body {
 .story__pictures {
   background-color: #c69963;
   background-image: linear-gradient(rgba(198, 153, 99, 0.5), rgba(198, 153, 99, 0.5)), url(/back.9cd3ab62.jpg);
-  grid-row: 3/4;
   grid-column: full-start/col-end 4;
   display: grid;
   grid-template-rows: repeat(6, 1fr);
@@ -310,7 +355,6 @@ body {
   align-content: center;
   justify-items: start;
   background-color: #f9f7f6;
-  grid-row: 3/4;
   grid-column: col-end 4/full-end;
   padding: 6rem 8vw;
 }
@@ -321,12 +365,16 @@ body {
 }
 
 .homes {
-  grid-row: 4/5;
   grid-column: center-start/center-end;
   margin: 15rem 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 7rem;
+}
+@media (max-width: 75rem) {
+  .homes {
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  }
 }
 
 .home {
@@ -401,7 +449,6 @@ body {
 
 .gallery {
   background-color: #101d2c;
-  grid-row: 5/6;
   grid-column: full-start/full-end;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -477,7 +524,6 @@ body {
 
 .footer {
   background-color: #101d2c;
-  grid-row: 6/7;
   grid-column: full-start/full-end;
   padding: 8rem;
 }
@@ -507,6 +553,16 @@ body {
   grid-template-rows: 1fr;
   grid-gap: 2rem;
   align-items: center;
+}
+@media (max-width: 75rem) {
+  .nav {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+}
+@media (max-width: 52rem) {
+  .nav {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  }
 }
 .nav__link:link, .nav__link:visited {
   font-size: 1.5rem;
