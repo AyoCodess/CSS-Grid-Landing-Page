@@ -141,10 +141,9 @@ body {
 }
 @media (max-width: 62rem) {
   .ayo__logo {
-    border-radius: 25%;
-    padding: 1rem;
-    margin-top: 1rem;
     border-radius: initial;
+    padding-bottom: 2rem;
+    margin-top: 1rem;
   }
 }
 .ayo__logo--1 {
@@ -166,7 +165,7 @@ body {
 }
 @media (max-width: 62rem) {
   .ayo__logo--1 {
-    border-radius: 100%;
+    border-radius: 500%;
     width: 5%;
     margin-left: initial;
     margin-top: 0.5rem;
@@ -180,18 +179,13 @@ body {
 }
 @media (max-width: 75rem) {
   .ayo__logo--1:hover {
-    transform: translateY(0px);
-    transform: translateX(0px);
-    border-radius: 100rem;
-    margin-top: 0rem;
+    transform: initial;
+    margin-top: initial;
   }
 }
 @media (max-width: 62rem) {
   .ayo__logo--1:hover {
-    transform: translateY(0px);
-    transform: translateX(0px);
     border-radius: initial;
-    margin-top: initial;
   }
 }
 
