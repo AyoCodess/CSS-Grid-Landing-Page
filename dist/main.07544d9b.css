@@ -320,6 +320,11 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
   }
 }
+@media (max-width: 33.5rem) {
+  .features {
+    grid-template-columns: repeat(auto-fit, minmax(42rem, 1fr));
+  }
+}
 @media (max-width: 26.625rem) {
   .features {
     margin: 7rem 0;
