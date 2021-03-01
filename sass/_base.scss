@@ -81,9 +81,9 @@ body {
 
     @media (max-width: $bp-small) {
         grid-template-columns:
-            [full-start] auto
+            [full-start] 1fr
             [center-start] repeat(8, [col-start] min-content [col-end])
             [center-end]
-            auto [full-end];
+            1fr [full-end];
     }
 }

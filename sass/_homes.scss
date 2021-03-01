@@ -7,13 +7,13 @@
 
     grid-gap: 7rem;
 
+    @media (max-width: $bp-largest) {
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    }
     @media (max-width: $bp-large) {
         margin: 7rem 0;
     }
 
-    @media (max-width: $bp-largest) {
-        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    }
     @media (max-width: $bp-smallest) {
         margin: 7rem 0;
     }

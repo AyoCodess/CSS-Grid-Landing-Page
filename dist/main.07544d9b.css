@@ -473,14 +473,14 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 7rem;
 }
-@media (max-width: 52rem) {
-  .homes {
-    margin: 7rem 0;
-  }
-}
 @media (max-width: 75rem) {
   .homes {
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  }
+}
+@media (max-width: 52rem) {
+  .homes {
+    margin: 7rem 0;
   }
 }
 @media (max-width: 34.875rem) {
