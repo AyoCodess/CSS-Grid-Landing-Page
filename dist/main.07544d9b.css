@@ -266,6 +266,11 @@ body {
     padding-bottom: 6rem;
   }
 }
+@media (max-width: 52rem) {
+  .realtors__list {
+    grid-template-columns: min-content max-content;
+  }
+}
 @media (max-width: 40rem) {
   .realtors__list {
     grid-template-columns: max-content max-content;
