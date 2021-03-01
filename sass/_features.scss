@@ -13,12 +13,12 @@
 
     @media (max-width: $bp-large) {
         margin: 7rem 0;
-        grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
     }
 
     @media (max-width: $bp-smallest) {
         margin: 7rem 0;
-        grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
     }
 
     @media (max-width: $bp-tiny) {
