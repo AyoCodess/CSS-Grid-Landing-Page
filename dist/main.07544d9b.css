@@ -327,7 +327,7 @@ body {
 }
 @media (max-width: 33.5rem) {
   .features {
-    grid-template-columns: repeat(auto-fit, minmax(42rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
   }
 }
 @media (max-width: 26.625rem) {
