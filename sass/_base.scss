@@ -86,4 +86,12 @@ body {
             [center-end]
             1fr [full-end];
     }
+
+    @media (max-width: 400px) {
+        grid-template-columns:
+            [full-start] 1fr
+            [center-start] repeat(8, [col-start] min-content [col-end])
+            [center-end]
+            1fr [full-end];
+    }
 }

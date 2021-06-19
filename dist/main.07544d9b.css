@@ -44,6 +44,11 @@ body {
     grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] min-content [col-end]) [center-end] 1fr [full-end];
   }
 }
+@media (max-width: 400px) {
+  .container {
+    grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] min-content [col-end]) [center-end] 1fr [full-end];
+  }
+}
 
 .heading-1 {
   font-family: "Josefin Sans", sans-serif;
